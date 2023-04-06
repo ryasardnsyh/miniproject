@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>itung cuyyy</title>
+    <script type="text/javascript"
+    src="js/index.js">
+    </script>    
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    
+    <h1 class="title">Welcome to Katik</h1>
+    <p class="konteks">Hai Sobat, Selamat Datang :) 
+        Sebuah Apps sederhana yang berfungsi untuk menhitung nilai luas dan keliling bangun datar.</p>
+</body>
+<header>
+    <nav>
+        <div class="menu">
+            <a href="#" class="menu-triagle">Segitiga</a>
+            <a href="#parallelogram" class="menu-parallelogram">Jajar Genjang</a>
+        </div>
+    </nav>
+</header>
+<main>
+    <section id="triagle">
+        <!-- Luas Segitiga -->
+        <div class="card"><div>
+            <h2 class="lsegitiga">Luas Segitiga</h2>
+        </div>
+        <img  class="foto" src="/miniproject/assets/segitigaa.jpg" alt="" style="width: 150px">
+        <div>
+            <h5>Rumus Luas Segitiga yaitu : </h5>
+            <p><center>L = 1/2 x a x t</center></p>
+        </div>
+        <div>
+            <p>Di mana :</p>
+            <p>L : Luas</p>
+            <p>a : Panjang Alas</p>
+            <p>t : Tinggi</p>
+        </div>
+        <div class="formhitung">
+            <h2 class="hitungsegitiga">Hitung Luas Segitiga</h2> 
+            <form action="" class="formtriagle">
+                <label>Alas</label> <input type="number" id="alas" name="alas">
+                <label>Tinggi</label><input type="number" id="tinggi" name="tinggi">
+                <input type="number" id="luas" name="luas" disabled="true" size="5">
+                <div>
+                    <p id="rumus"></p>
+                    <p id="itung"></p>
+                    <p id="hasil"></p>
+                </div>
+                <input type="button" value="Hitung" onclick="Luas()">
+            </form>
+            
+        </div></div>
+        <!-- Keliling Segitiga -->
+        <div class="card"><div>
+            <h2 class="lsegitiga">Keliling Segitiga</h2>
+        </div>
+        <img  class="foto" src="/miniproject/assets/segitigaa.jpg" alt="" style="width: 150px">
+        <div>
+            <h5>Rumus Keliling Segitiga yaitu : </h5>
+            <p><center>K = S1 + S2 + S3</center></p>
+        </div>
+        <div>
+            <p>Di mana :</p>
+            <p>K  : Keliling</p>
+            <p>S1 : Sisi A</p>
+            <p>S2 : Sisi B</p>
+            <p>S3 : Sisi C</p>
+        </div>
+        <div class="formhitung">
+            <h2 class="hitungsegitiga">Hitung Keliling Segitiga</h2>
+            <form action="" class="formtriagle">
+                <label>Sisi A</label><input type="number" id="ssa" name="ssa">
+                <label>Sisi B</label><input type="number" id="ssb" name="ssb">
+                <label>Sisi C</label><input type="number" id="ssc" name="ssc">
+                <input type="number" id="keliling" name="keliling" disabled="true" size="5">
+                <div>
+                    <p id="rumuskel"></p>
+                    <p id="itungkel"></p>
+                    <p id="hasilkel"></p>
+                </div>
+                <input type="button" value="Hitung" onclick="Keliling()">
+            </form>
+        </div></div>
+    </section>
+    <section id="parallelogram">
+        
+        <nav>
+            <div class="menu">
+                <a href="#triagle" id="segi3" class="menu-triagle">Segitiga</a>
+                <a href="#parallelogram" id="jajar" class="menu-parallelogram">Jajar Genjang</a>
+            </div>
+        </nav>
+
+        <!--luas jajargenjang-->
+        <div class="card"><div>
+            <h2 class="ljajargenjang">Luas & Keliling Jajar Genjang</h2>
+        </div>
+        <img  class="foto" src="/miniproject/assets/jajargenjang.png" alt="" style="width: 150px; padding-top: 20px;">
+        <div>
+            <h5>Rumus Luas Jajar Genjang yaitu : </h5>
+            <p><center>K = 2 x (a x b)</center></p>
+        </div>
+        <div>
+            <p>Di mana :</p>
+            <p>K : Keliling</p>
+            <p>a  : Alas</p>
+            <p>b  : Sisi Miring</p>
+        </div>
+        <div class="formhitung">
+            <h2 class="hitungjajargenjang">Hitung Luas Jajar Genjang</h2>
+            <form action="" class="formtriagle">
+                <label>Alas</label> <input type="number" id="alasjajar" name="alasjajar">
+                <label>Tinggi</label><input type="number" id="tinggijajar" name="tinggijajar">
+                <label>Luas Jajar Genjang</label>
+                <input type="number" id="luasjajar" name="luasjajar" disabled="true" size="5">
+                <label>Keliling Jajar Genjang</label>
+                <input type="number" id="kelilingjajar" name="kelilingjajar" disabled="true" size="5">
+                <div>
+                    <p id="rumusjajar"></p>
+                    <p id="rumusjajar1"></p>
+                    <p id="itungjajar"></p>
+                    <p id="itungjajar1"></p>
+                    <p id="hasil"></p>
+                    <p id="hasil1"></p>
+                </div>
+                <input type="button" value="Hitung" onclick="LKjajar()">
+            </form>
+
+    </section>
+</main>
+<footer class="footer">Copyright Ryz 2023</footer>
+
+</html>
